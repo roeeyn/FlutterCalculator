@@ -25,43 +25,265 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Row(
+        child: Column(
           children: <Widget>[
-            Column(
-              children: <Widget>[
-                Text("Cosa", style: TextStyle(color: Colors.white),),
-                Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: Container(
-                        child: Text("AC", style: TextStyle(color: Colors.white),),
+            Expanded(
+              flex: 35,
+              child: Text(
+                "Cosa",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            Expanded(
+              flex: 65,
+              child: Column(children: <Widget>[
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
                       ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        child: Text("+/-", style: TextStyle(color: Colors.white),),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
                       ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        child: Text("%", style: TextStyle(color: Colors.white),),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
                       ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        child: Text("÷", style: TextStyle(color: Colors.white),),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
                       ),
-                    ),
-                  ],
-                )
-              ],
+
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Container(
+                            margin: EdgeInsets.only(bottom: 18),
+                            decoration: BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: Center(
+                              child: Text(
+                                "HEY",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 18),
+                              ),
+                            )),
+                      ),
+
+                    ],
+                  ),
+                ),
+
+              ]),
             )
           ],
         ),
