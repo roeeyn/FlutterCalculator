@@ -4,6 +4,10 @@ void main() {
   runApp(MyApp());
 }
 
+const orangeColor = Color.fromRGBO(255, 150, 44, 1);
+const grayColor = Color.fromRGBO(153, 155, 156, 1);
+const darkGrayColor = Color.fromRGBO(44, 45, 46, 1);
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -56,20 +60,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: grayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "AC",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.w600),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -79,20 +86,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: grayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "+/-",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.w600),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -102,20 +112,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: grayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "%",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 32,
+                                        fontWeight: FontWeight.w600),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -125,119 +138,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: Colors.orange, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "÷",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 42,
+                                        fontWeight: FontWeight.w600),
                                   ),
                                 ),
                               ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: <Widget>[
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -254,20 +171,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "7",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -277,20 +195,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "8",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -300,20 +219,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "9",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -323,119 +243,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: Colors.orange, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "X",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 32,
+                                        fontWeight: FontWeight.w600),
                                   ),
                                 ),
                               ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: <Widget>[
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(bottom: 8),
-                          child: Material(
-                            color: Colors.black,
-                            child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
-                                  ),
-                                ),
-                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -452,20 +276,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "4",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -475,20 +300,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "5",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -498,20 +324,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "6",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
                                   ),
                                 ),
                               ),
+                            ),
                           ),
                         ),
                       ),
@@ -521,20 +348,216 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Material(
                             color: Colors.black,
                             child: Ink(
-                                decoration: BoxDecoration(
-                                    color: Colors.orange, shape: BoxShape.circle),
-                                child: InkWell(
-                                  borderRadius: BorderRadius.all(Radius.circular(60)),
-                                  onTap: (){},
-                                  child: Center(
-                                    child: Text(
-                                      "HEY",
-                                      style:
-                                          TextStyle(color: Colors.white, fontSize: 18),
-                                    ),
+                              decoration: BoxDecoration(
+                                  color: Colors.orange, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "-",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 82,
+                                        fontWeight: FontWeight.w300),
                                   ),
                                 ),
                               ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: Material(
+                            color: Colors.black,
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "1",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: Material(
+                            color: Colors.black,
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "2",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: Material(
+                            color: Colors.black,
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "3",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: Material(
+                            color: Colors.black,
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                  color: Colors.orange, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "+",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 42,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 8, left: 8, right: 8),
+                          child: Material(
+                            color: Colors.black,
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor,
+                                  borderRadius: BorderRadius.circular(55),
+                                  shape: BoxShape.rectangle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Container(
+                                  padding: EdgeInsets.only(left: 32),
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    "0",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: Material(
+                            color: Colors.black,
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                  color: darkGrayColor, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    ".",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 36),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: Material(
+                            color: Colors.black,
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                  color: Colors.orange, shape: BoxShape.circle),
+                              child: InkWell(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(60)),
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    "=",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 42,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
                         ),
                       ),
