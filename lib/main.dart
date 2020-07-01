@@ -33,14 +33,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             Expanded(
-              flex: 35,
-              child: Text(
-                "Cosa",
-                style: TextStyle(color: Colors.white),
+              flex: 3,
+              child: Container(
+                alignment: Alignment.bottomRight,
+                margin: EdgeInsets.only(bottom: 12, left: 24, right: 24),
+                child: Text(
+                  "0",
+                  style: TextStyle(color: Colors.white, fontSize: 80),
+                ),
               ),
             ),
             Expanded(
-              flex: 65,
+              flex: 7,
               child: Column(children: <Widget>[
                 Expanded(
                   child: Row(
