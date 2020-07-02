@@ -29,21 +29,37 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   String _screenText = "0";
 
-  void addNumberToText(newNumber){
+  String _stashedNumber = "0";
+
+  var _selectedOps = [false, false, false, false];
+
+  void addNumberToText(newNumber) {
     setState(() {
-      if (_screenText != "0" || newNumber != "0"){
-        if(_screenText == "0"){
+      if (newNumber == ".") {
+        if (_screenText.indexOf(".") >= 0) return;
+        if (_screenText == "0") {
+          _screenText = "0.";
+          return;
+        }
+      }
+      if (_screenText != "0" || newNumber != "0") {
+        if (_screenText == "0") {
           _screenText = newNumber;
           return;
         }
-        if(newNumber == "." && _screenText.indexOf(".") >= 0) {
-          return;
-        }
-        _screenText = _screenText + newNumber;
+      _screenText = _screenText + newNumber;
       }
+
+    });
+  }
+
+  void resetScreen() {
+    setState(() {
+      _stashedNumber = "0";
+      _selectedOps = [false, false, false, false];
+      _screenText = "0";
     });
   }
 
@@ -83,7 +99,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  resetScreen();
+                                },
                                 child: Center(
                                   child: Text(
                                     "AC",
