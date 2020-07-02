@@ -1,4 +1,6 @@
-# uvmcalculator
+# Calculator With Flutter
+
+![Demo Gif](https://media.giphy.com/media/kZi3kjtZqSIPz57Eg4/giphy.gif)
 
 A new Flutter application.
 
