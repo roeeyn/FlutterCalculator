@@ -29,6 +29,24 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  String _screenText = "0";
+
+  void addNumberToText(newNumber){
+    setState(() {
+      if (_screenText != "0" || newNumber != "0"){
+        if(_screenText == "0"){
+          _screenText = newNumber;
+          return;
+        }
+        if(newNumber == "." && _screenText.indexOf(".") >= 0) {
+          return;
+        }
+        _screenText = _screenText + newNumber;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 alignment: Alignment.bottomRight,
                 margin: EdgeInsets.only(bottom: 12, left: 24, right: 24),
                 child: Text(
-                  "0",
+                  _screenText,
                   style: TextStyle(color: Colors.white, fontSize: 80),
                 ),
               ),
@@ -176,7 +194,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("7");
+                                },
                                 child: Center(
                                   child: Text(
                                     "7",
@@ -200,7 +220,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("8");
+                                },
                                 child: Center(
                                   child: Text(
                                     "8",
@@ -224,7 +246,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("9");
+                                },
                                 child: Center(
                                   child: Text(
                                     "9",
@@ -281,7 +305,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("4");
+                                },
                                 child: Center(
                                   child: Text(
                                     "4",
@@ -305,7 +331,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("5");
+                                },
                                 child: Center(
                                   child: Text(
                                     "5",
@@ -329,7 +357,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("6");
+                                },
                                 child: Center(
                                   child: Text(
                                     "6",
@@ -386,7 +416,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("1");
+                                },
                                 child: Center(
                                   child: Text(
                                     "1",
@@ -410,7 +442,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("2");
+                                },
                                 child: Center(
                                   child: Text(
                                     "2",
@@ -434,7 +468,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("3");
+                                },
                                 child: Center(
                                   child: Text(
                                     "3",
@@ -494,7 +530,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText("0");
+                                },
                                 child: Container(
                                   padding: EdgeInsets.only(left: 32),
                                   alignment: Alignment.centerLeft,
@@ -521,7 +559,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  addNumberToText(".");
+                                },
                                 child: Center(
                                   child: Text(
                                     ".",
