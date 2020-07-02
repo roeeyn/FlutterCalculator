@@ -63,6 +63,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void toggleSign(){
+    setState(() {
+      if(_screenText.indexOf("-") >= 0){
+        _screenText = _screenText.substring(1);
+      } else {
+        _screenText = "-" + _screenText;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,7 +137,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  toggleSign();
+                                },
                                 child: Center(
                                   child: Text(
                                     "+/-",
@@ -153,7 +165,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  // TODO
+                                },
                                 child: Center(
                                   child: Text(
                                     "%",
