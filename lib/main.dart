@@ -49,9 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
           _screenText = newNumber;
           return;
         }
-      _screenText = _screenText + newNumber;
+        _screenText = _screenText + newNumber;
       }
-
     });
   }
 
@@ -63,9 +62,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void toggleSign(){
+  void setSelectedFunction(index) {
     setState(() {
-      if(_screenText.indexOf("-") >= 0){
+      _selectedOps = [false, false, false, false];
+      _selectedOps[index] = true;
+    });
+  }
+
+  void toggleSign() {
+    setState(() {
+      if (_screenText.indexOf("-") >= 0) {
         _screenText = _screenText.substring(1);
       } else {
         _screenText = "-" + _screenText;
@@ -189,16 +195,23 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.black,
                             child: Ink(
                               decoration: BoxDecoration(
-                                  color: Colors.orange, shape: BoxShape.circle),
+                                  color: _selectedOps[0]
+                                      ? Colors.white
+                                      : orangeColor,
+                                  shape: BoxShape.circle),
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  setSelectedFunction(0);
+                                },
                                 child: Center(
                                   child: Text(
                                     "÷",
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: _selectedOps[0]
+                                            ? orangeColor
+                                            : Colors.white,
                                         fontSize: 42,
                                         fontWeight: FontWeight.w600),
                                   ),
@@ -300,16 +313,23 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.black,
                             child: Ink(
                               decoration: BoxDecoration(
-                                  color: Colors.orange, shape: BoxShape.circle),
+                                  color: _selectedOps[1]
+                                      ? Colors.white
+                                      : orangeColor,
+                                  shape: BoxShape.circle),
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  setSelectedFunction(1);
+                                },
                                 child: Center(
                                   child: Text(
                                     "X",
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: _selectedOps[1]
+                                            ? orangeColor
+                                            : Colors.white,
                                         fontSize: 32,
                                         fontWeight: FontWeight.w600),
                                   ),
@@ -411,16 +431,23 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.black,
                             child: Ink(
                               decoration: BoxDecoration(
-                                  color: Colors.orange, shape: BoxShape.circle),
+                                  color: _selectedOps[2]
+                                      ? Colors.white
+                                      : orangeColor,
+                                  shape: BoxShape.circle),
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  setSelectedFunction(2);
+                                },
                                 child: Center(
                                   child: Text(
                                     "-",
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: _selectedOps[2]
+                                            ? orangeColor
+                                            : Colors.white,
                                         fontSize: 82,
                                         fontWeight: FontWeight.w300),
                                   ),
@@ -522,16 +549,23 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.black,
                             child: Ink(
                               decoration: BoxDecoration(
-                                  color: Colors.orange, shape: BoxShape.circle),
+                                  color: _selectedOps[3]
+                                      ? Colors.white
+                                      : orangeColor,
+                                  shape: BoxShape.circle),
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  setSelectedFunction(3);
+                                },
                                 child: Center(
                                   child: Text(
                                     "+",
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: _selectedOps[3]
+                                            ? orangeColor
+                                            : Colors.white,
                                         fontSize: 42,
                                         fontWeight: FontWeight.w600),
                                   ),
