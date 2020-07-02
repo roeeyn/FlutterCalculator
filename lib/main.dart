@@ -33,10 +33,34 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String _stashedNumber = "0";
 
+  int _stashedOperation = 0;
+
   var _selectedOps = [false, false, false, false];
+
+  void getResult() {
+    setState(() {
+      var stashedNumber = double.parse(_stashedNumber);
+      var screenNumber = double.parse(_screenText);
+      var result = _stashedOperation == 0
+          ? stashedNumber / screenNumber
+          : _stashedOperation == 1
+              ? stashedNumber * screenNumber
+              : _stashedOperation == 2
+                  ? stashedNumber - screenNumber
+                  : _stashedOperation == 3 ? stashedNumber + screenNumber : 0;
+      _screenText = "$result";
+    });
+  }
 
   void addNumberToText(newNumber) {
     setState(() {
+      if (_selectedOps.contains(true)) {
+        _stashedOperation = _selectedOps.indexOf(true);
+        _selectedOps = [false, false, false, false];
+        _stashedNumber = _screenText;
+        _screenText = "0";
+      }
+
       if (newNumber == ".") {
         if (_screenText.indexOf(".") >= 0) return;
         if (_screenText == "0") {
@@ -652,7 +676,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: InkWell(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(60)),
-                                onTap: () {},
+                                onTap: () {
+                                  getResult();
+                                },
                                 child: Center(
                                   child: Text(
                                     "=",
